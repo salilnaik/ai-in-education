@@ -7,10 +7,19 @@
     <title>Home Page</title>
   </head>
   <body>
-    <div class="top-banner"></div>
-    <a href="/chat">Chat</a>
-    <input type="text" id="Major" list="Majors" />
-    <datalist id="Majors"></datalist>
+    <div class="container">
+      <div class="top-banner"><h1>Home Page</h1></div>
+      <div class="main-content">
+        <div class="entry">
+          <input type="text" list="browsers" />
+          <datalist id="browsers">
+            <option>Google</option>
+            <option>IE9</option>
+          </datalist>
+        </div>
+        <a href="/chat">Chat</a>
+      </div>
+    </div>
 
     <script>
         const names = ['Aeronautical Management Technology (Air Traffic Management) - BS', 'Aeronautical Management Technology (Air Transportation Management) - BS', 'Aeronautical Management Technology (Professional Flight) - BS', 'Aeronautical Management Technology (Unmanned Aerial Systems) - BS', 'Aerospace Engineering (Aeronautics) - BSE', 'Aerospace Engineering (Astronautics) - BSE', 'Aerospace Engineering (Autonomous Vehicle Systems) - BSE', 'Applied Science (Aviation) - BAS', 'Applied Science (Graphic Information Technology) - BAS', 'Applied Science (Internet and Web Development) - BAS', 'Applied Science (Operations Management) - BAS', 'Biomedical Engineering - BSE', 'Biomedical Engineering (Biological Devices) - BSE', 'Biomedical Engineering (Biomedical Devices) - BSE', 'Chemical Engineering - BSE', 'Civil Engineering - BSE', 'Civil Engineering (Sustainable Engineering) - BSE', 'Computer Science - BS', 'Computer Science (Cybersecurity) - BS', 'Computer Science (Software Engineering) - BS', 'Computer Systems Engineering - BSE', 'Computer Systems Engineering (Cybersecurity) - BSE', 'Construction Engineering - BSE', 'Construction Management and Technology - BS', 'Electrical Engineering - BSE', 'Electrical Engineering (Electric Power and Energy Systems) - BSE', 'Engineering - BSE', 'Engineering (Automotive Systems) - BSE', 'Engineering (Electrical Systems) - BSE', 'Engineering (Mechanical Engineering Systems) - BSE', 'Engineering (Robotics) - BSE', 'Engineering Management - BSE', 'Engineering Science (Business) - BS', 'Engineering Science (Microelectronics) - BS', 'Environmental and Resource Management - BS', 'Environmental Engineering - BSE', 'Graphic Information Technology - BS', 'Graphic Information Technology (Full-Stack Web Development) - BS', 'Graphic Information Technology (User Experience) - BS', 'Human Systems Engineering - BS', 'Human Systems Engineering (User Experience) - BS', 'Industrial Engineering - BSE', 'Informatics - BS', 'Information Technology - BS', 'Manufacturing Engineering - BS', 'Materials Science and Engineering - BSE', 'Mechanical Engineering - BSE', 'Mechanical Engineering (Computational Mechanics) - BSE', 'Mechanical Engineering (Energy and Environment) - BSE', 'Robotics and Autonomous Systems - BS', 'Software Engineering - BS', 'Technological Entrepreneurship and Management - BS'];
