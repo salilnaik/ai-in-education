@@ -127,3 +127,11 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
+
+#Majors {
+  width 500px;
+}
+
+#Majors options {
+  white-space: normal;
+}
