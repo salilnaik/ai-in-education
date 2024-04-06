@@ -38,8 +38,25 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+    $(document).ready(function(){
+        $('#message').keypress(function(e){
+          if(e.keyCode==13)
+          $('button').click();
+        });
+    });
     $("button").click(function(){
         $(".box").append('<br clear="both"><div class="item right"><div class="msg"><p>' + $("#message").val() + '</p></div></div>');
+
+        $.ajax({
+            type:'POST',
+            url:'/chat',
+            data:{message:$("#message").val()},
+            success:function()
+            {
+              
+            }
+        })
+
         $("#message").val("");
     });
 </script>

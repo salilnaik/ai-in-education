@@ -7,13 +7,12 @@ app = Flask(__name__, static_url_path='/static')
 def home():
     return '<a href="/chat">Chat</a>'
 
-@app.route("/chat")
-def hello_world():
+@app.route('/chat', methods=['POST', 'GET'])
+def chat():
+    if request.method == "POST":
+        message = request.form["message"]
+        print(message)
     return render_template('index.html')
 
-
-@app.route('/', methods=['POST'])
-def MajorHandler():
-    text = request.form['Major']
-    processed_text = text.upper()
-    return processed_text
+    
+app.run(debug=True)
