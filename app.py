@@ -1,15 +1,11 @@
 from flask import Flask, request
+from flask import render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return """
-            <form method="POST">
-                <input name="text">
-                <input name="text">
-                <input type="submit">
-            </form>"""
+    return render_template("index.html")
             
 @app.route('/', methods=['POST'])
 def my_form_post():
