@@ -17,9 +17,9 @@
         </div>
         <div class="entry interests">
           <p>Interests:</p>
-          <input type="text">
+          <input type="text" id="interests">
         </div>
-        <a href="/chat">Chat</a>
+        <button id="chat">Chat</button>
       </div>
     </div>
 
@@ -87,8 +87,23 @@ function addActive(x) {
       x[i].classList.remove("active");
     }
   }
+</script>
 
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+    $("#chat").click(function(){
+      window.location.href = "/chat";
+      $.ajax({
+        type:'POST',
+        url:'/submit',
+        data:{interests:$("#interests").val(), major:$("#input").val()},
+        success:function(data, textStatus)
+        {
+        }
+    })
+    });
+  </script>
     </fieldset>
   </body>
 </html>

@@ -71,7 +71,7 @@
           success: function(response) {
             if(response != r){
                 r = response;
-                $(".box").append('<br clear="both"><div class="item"><div class="icon"><i class="fa fa-user"></i></div><div class="msg"><p>' + r + '</p></div></div>');
+                $(".box").append('<br clear="both"><div class="item"><div class="icon"><i class="fa fa-user"></i></div><div class="msg"><p markdown="1">' + r + '</p></div></div>');
                 $(".box").animate({scrollTop: $('.box').prop("scrollHeight")}, 1000);
             }
            },

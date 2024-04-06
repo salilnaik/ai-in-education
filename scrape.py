@@ -9,11 +9,14 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller as chromedriver
+from selenium.webdriver.chrome.options import Options
 import time
 chromedriver.install()
 
 def getMajorMap(index):
-    driver = webdriver.Chrome()
+    options = Options()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(chrome_options=options)
     driver.get("https://degrees.apps.asu.edu/major-map/" + majors[index][45:] + "/null/ALL/2024")
     clicks = driver.find_elements(By.CLASS_NAME, "fa chevron-icon fa-chevron-down")
     for click in clicks:
