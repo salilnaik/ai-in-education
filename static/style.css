@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper {
-    width: 370px;
+    width: 570px;
 }
 
 .wrapper .title {
@@ -32,12 +32,16 @@ body {
     padding: 10px 15px;
     min-height: 400px;
     max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .wrapper .box .item {
     display: flex;
     float: left;
     margin: 10px 0;
+    overflow-x: visible;
+    flex-wrap: wrap;
 }
 
 .wrapper .box .item .icon {
@@ -54,21 +58,28 @@ body {
     background: #007bff;
     color: white;
     border-radius: 10px;
-    width: 150px;
+    width: 400px;
     margin-left: 10px;
+    overflow: visible;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .wrapper .box .item .msg p {
+    overflow-wrap:normal;
     padding: 10px;
+    overflow: visible;
 }
 
 .wrapper .box .item.right {
     float: right;
+    overflow-x: visible;
 }
 
 .wrapper .box .item.right .msg {
     background: #efefef;
     color: #333;
+    width: 400px;
 }
 
 .wrapper .typing-area {
