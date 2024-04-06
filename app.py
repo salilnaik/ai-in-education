@@ -1,20 +1,11 @@
-from tkinter import ttk
-
 from flask import Flask, request
-from tkinter import *
+from flask import Flask, render_template
 
-app = Flask(__name__)
-root = Tk()
-combo = ttk.Combobox(root)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def hello_world():
-    return """
-            <form method="POST">
-                <input name="Major">
-                <input name="text">
-                <input type="submit">
-            </form>"""
+    return render_template('index.html')
 
 
 @app.route('/', methods=['POST'])
