@@ -71,6 +71,12 @@ body {
     overflow: visible;
 }
 
+.wrapper .box .item .msg li {
+    overflow-wrap:normal;
+    padding: 20px;
+    overflow: visible;
+}
+
 .wrapper .box .item.right {
     float: right;
     overflow-x: visible;
