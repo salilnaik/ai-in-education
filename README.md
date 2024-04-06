@@ -29,6 +29,6 @@ Navigating the college experience can be daunting, especially for incoming stude
 > Our plans for the future of this product
 
 - We originally set out to make something that students can use as a companion that will guide them not only through their academics but their professional careers as well.
- - We want this to be a dynamically changing tool they can use as they improve and grow. We want it to grow with them.
+  - We want this to be a dynamically changing tool they can use as they improve and grow. We want it to grow with them.
 - We want to later include functionality that will dynamically create a portfolio website for the student based on the classes they take, skills they accrue, clubs they're involved in, and jobs they hold.
- - Given the opportunity to further develop it we'd like this product to pull information about they're club and job involvement via a web of connected accounts like LinkedIn and Sun Devil Sync where we can capture information about extracurriculars and professional opportunities they're pursuing so their website can be best tailored to their growing resume.
+   - Given the opportunity to further develop it we'd like this product to pull information about they're club and job involvement via a web of connected accounts like LinkedIn and Sun Devil Sync where we can capture information about extracurriculars and professional opportunities they're pursuing so their website can be best tailored to their growing resume.
