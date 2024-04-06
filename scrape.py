@@ -25,4 +25,5 @@ def getMajorMap(index):
     y = y.translate(translator)
 
     driver.close()
+    return y
 
